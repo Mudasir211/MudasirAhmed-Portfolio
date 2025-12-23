@@ -1,0 +1,40 @@
+@import "tailwindcss";
+:root {
+  --bg: #0b0f17;
+  --muted: #9aa6b2;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(180deg, #02040a 0%, #071226 50%);
+  color: #dbeafe;
+  font-family: var(--font-sans);
+}
+
+.neon {
+  text-shadow: 0 0 8px rgba(0, 170, 255, 0.18), 0 0 24px rgba(0, 170, 255, 0.08);
+}
+
+.card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.02),
+    rgba(255, 255, 255, 0.01)
+  );
+  border: 1px solid rgba(0, 170, 255, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.btn-primary {
+  @apply px-5 py-2 rounded-2xl font-medium;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 170, 255, 0.12),
+    rgba(41, 198, 255, 0.12)
+  );
+  border: 1px solid rgba(0, 170, 255, 0.22);
+}
