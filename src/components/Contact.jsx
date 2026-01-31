@@ -52,7 +52,7 @@ export default function Contact() {
         Get in Touch
       </motion.h2>
 
-      <div className="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-6">
+      <div className="relative max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
         {/* CONTACT INFO */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}

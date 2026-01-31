@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
@@ -20,10 +21,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body>
-        <div className="min-h-screen px-6 lg:px-20">
+      <body className="overflow-x-hidden">
+        <div className="min-h-screen flex flex-col px-6 lg:px-20 overflow-x-hidden">
           <Navbar />
-          <main className="mt-8">{children}</main>
+          <main className="mt-8 w-full max-w-full">{children}</main>
         </div>
       </body>
     </html>
