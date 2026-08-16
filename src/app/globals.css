@@ -16,7 +16,9 @@ body {
 }
 
 .neon {
-  text-shadow: 0 0 8px rgba(0, 170, 255, 0.18), 0 0 24px rgba(0, 170, 255, 0.08);
+  text-shadow:
+    0 0 8px rgba(0, 170, 255, 0.18),
+    0 0 24px rgba(0, 170, 255, 0.08);
 }
 
 .card {
@@ -47,4 +49,7 @@ body {
 
 * {
   box-sizing: border-box;
+}
+.font-libre-baskerville {
+  font-family: var(--font-libre-baskerville);
 }

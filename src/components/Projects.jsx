@@ -6,7 +6,7 @@ const projects = [
   { title: 'Natura (E-commerce)',link: "https://naturapk.store/", desc: 'Next.js, Clerk, MongoDB. Product gallery, cart, checkout UI and admin,A complete fullstack eccomerce website.' },
   { title: 'KiddyLearno',link: "https://www.kiddylearno.online/", desc: 'Educational platform for kids using Next.js, Tailwind and Clerk.' },
   { title: 'MacaroniX',link: "https://macaroni-x.vercel.app/", desc: 'Digital Marketing Agency Website made in Nextjs.' }
-  ,{ title: "Bigby's", link: "https://vite-build-bigby-s.vercel.app/", desc: 'Fullstack eccomerce webapp made with react,redux toolkit, expressjs and mongodb.' },
+  ,{ title: "Bigby's", link: "https://vite-build-bigby-s.vercel.app/", desc: 'Fullstack eccomerce webapp made with react,redux toolkit, expressjs and mongodb.' },,{ title: "Mini India", link: "https://miniindia.co.nz/", desc: 'Worked on this website and edited it as intended by the client' },
 ]
 
 export default function Projects() {

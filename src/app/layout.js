@@ -1,5 +1,11 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import {
+  Cedarville_Cursive,
+  Inter,
+  Libre_Baskerville,
+  Outfit,
+  Sekuya,
+} from "next/font/google";
 import Navbar from "@/components/Navbar";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,10 +23,19 @@ export const metadata = {
   description:
     "Portfolio of Mudasir Ahmed — HTML, CSS, JavaScript, React, Node, Next.js, MongoDB.",
 };
-
+const libreBaskerville = Libre_Baskerville({
+  subsets: ["latin"],
+  weight: ["400", "700"], // Regular & Bold
+  style: ["normal", "italic"],
+  display: "swap", // Prevents invisible text during load
+  variable: "--font-libre-baskerville", // Optional: CSS variable for flexibility
+});
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${libreBaskerville.variable}`}
+    >
       <body className="overflow-x-hidden">
         <div className="min-h-screen flex flex-col px-6 lg:px-20 overflow-x-hidden">
           <Navbar />

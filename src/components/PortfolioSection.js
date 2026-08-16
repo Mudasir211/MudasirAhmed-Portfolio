@@ -42,6 +42,13 @@ const projectsData = [
     img: "/Macaroni.jpeg",
     short: "Cyberpunk-inspired digital marketing agency website.",
   },
+  {
+    id: 5,
+    title: "Mini India",
+    link: "https://miniindia.co.nz/",
+    img: "/minindia.jpeg",
+    short: "A Website for a restaurant edited by me.",
+  },
 ];
 
 export default function PortfolioSection() {
